@@ -157,7 +157,7 @@ public class ShowEncounterStatsListener extends BaseCampaignEventListener {
 			if (captain != null
 					&& !captain.isPlayer()
 					&& ("officer".equals(captain.getPostId())
-						|| "commander".equals(captain.getPostId()))) {
+						|| captain.isAICore())) {
 
 				stats.officerCount++;
 				stats.officerLevelSum += captain.getStats().getLevel();
@@ -191,8 +191,8 @@ public class ShowEncounterStatsListener extends BaseCampaignEventListener {
 			int ships = countCivShips ? shipCount : combatShipCount;
 			int deploy = (int) (countCivShips ? totalDP : combatDP);
 
-			int avgLvl = (officerCount > 0)
-				? Math.round((float) officerLevelSum / officerCount)
+			float avgLvl = (officerCount > 0)
+				? officerLevelSum / officerCount
 				: 0;
 
 			return new String[] {

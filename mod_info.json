@@ -1,8 +1,8 @@
 {
 	"id":"show_encounter_stats",
-	"name":"Show Encounter Stats",
+	"name":"Show Encounter Stats DEV",
  	"author":"Albert Hiisky, Seekers",
-	"version":"1.1.0",
+	"version":"1.1.1",
 	"description":"Displays info about number of ships, DP, FP and bonus EXP before battle, among others.",
 	"gameVersion":"0.98a-RC5",
 	"totalConversion":false,
