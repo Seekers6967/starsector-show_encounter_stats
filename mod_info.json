@@ -1,6 +1,6 @@
 {
 	"id":"show_encounter_stats",
-	"name":"Show Encounter Stats DEV",
+	"name":"Show Encounter Stats",
  	"author":"Albert Hiisky, Seekers",
 	"version":"1.1.1",
 	"description":"Displays info about number of ships, DP, FP and bonus EXP before battle, among others.",
@@ -13,4 +13,5 @@
 	{"id": "lw_lazylib", "name": "LazyLib"},
 	{"id": "lunalib", "name": "LunaLib"}
 	]
+
 }
